@@ -6,7 +6,7 @@
 %global gitrel      .%{commit_date}.git%{shortcommit}
 
 Name: tdlib
-Version: 1.8.3
+Version: 1.8.4
 Release: 1%{?dist}
 
 License: Boost
@@ -79,6 +79,9 @@ sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
 %{_libdir}/libtd*.a
 
 %changelog
+* Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 1.8.4-1
+- Fix (shlyakpavel@gmail.com)
+
 * Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 1.8.3-1
 - new package built with tito
 
