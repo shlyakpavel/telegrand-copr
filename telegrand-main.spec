@@ -6,8 +6,8 @@
 %global uuid    com.github.melix99.telegrand.Devel
 
 Name:           %{appname}-main
-Version:        4.4.1
-Release:        1.%{date}git%{shortcommit}%{?dist}
+Version:        0.0.1
+Release:        1
 Summary:        Matrix messaging app for GNOME written in Rust
 
 License:        GPLv3+
