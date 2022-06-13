@@ -38,15 +38,7 @@ programming language.
 Summary: Development files for %{name}
 Requires: %{name}%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 
-%package static
-Summary: Static libraries for %{name}
-Requires: %{name}%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
-Requires: %{name}-devel%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
-
 %description devel
-%{summary}.
-
-%description static
 %{summary}.
 
 %prep
@@ -59,7 +51,7 @@ sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
     -DCMAKE_INSTALL_LIBDIR=%{_lib} \
     -DTD_ENABLE_JNI:BOOL=OFF \
     -DTD_ENABLE_DOTNET:BOOL=OFF
-%cmake_build
+%cmake_build --target tdjson
 
 %install
 %cmake_install
@@ -74,9 +66,6 @@ sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
 %{_libdir}/libtd*.so
 %{_libdir}/cmake/Td
 %{_libdir}/pkgconfig/td*.pc
-
-%files static
-%{_libdir}/libtd*.a
 
 %changelog
 * Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 1.8.4-1
