@@ -12,7 +12,7 @@ Summary:        Matrix messaging app for GNOME written in Rust
 
 License:        GPLv3+
 URL:            https://github.com/melix99/telegrand/
-Source0:	http://github.com/melix99/telegrand/archive/%{commit}/%{appname}-%{shortcommit}.tar.gz
+Source0:	https://github.com/melix99/telegrand/archive/%{commit}/%{appname}-%{shortcommit}.tar.gz
 
 BuildRequires:  cargo
 BuildRequires:  cmake
@@ -45,8 +45,6 @@ BuildRequires:  pkgconfig(pango)
 BuildRequires:  pkgconfig(pangocairo)
 
 Requires:       hicolor-icon-theme
-
-Conflicts:      %{appname}
 
 %description
 Fractal is a Matrix messaging app for GNOME written in Rust. Its interface is
