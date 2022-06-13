@@ -1,6 +1,6 @@
 %undefine __cmake_in_source_build
 
-%global commit      461b740987101972cce65d1d5c996f455e4891ee
+%global commit      3f54c301ead1bbe6529df4ecfb63c7f645dd181c
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 %global commit_date 20220324
 %global gitrel      .%{commit_date}.git%{shortcommit}
