@@ -1,6 +1,6 @@
 %global commit  f9a5bd88162211846d392f8db72a3bd7aff90220
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global date    20211018
+%global date    20200613
 
 %global appname telegrand
 %global uuid    com.github.melix99.telegrand.Devel
@@ -12,7 +12,7 @@ Summary:        Matrix messaging app for GNOME written in Rust
 
 License:        GPLv3+
 URL:            https://github.com/melix99/telegrand/
-Source:		https://github.com/melix99/telegrand/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
+Source:		https://github.com/melix99/telegrand/archive/%{commit}/%{appname}-%{shortcommit}.tar.gz
 
 BuildRequires:  cargo
 BuildRequires:  cmake
@@ -54,7 +54,7 @@ optimized for collaboration in large groups, such as free software projects.
 
 
 %prep
-%autosetup -n telegrand-%{commit}
+%autosetup -n telegrand-%{shortcommit}
 
 %build
 %meson
