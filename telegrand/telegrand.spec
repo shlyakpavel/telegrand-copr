@@ -24,25 +24,13 @@ BuildRequires:  libappstream-glib
 BuildRequires:  meson
 BuildRequires:  rust
 
-BuildRequires:  pkgconfig(atk)
-BuildRequires:  pkgconfig(cairo)
-BuildRequires:  pkgconfig(dbus-1)
-BuildRequires:  pkgconfig(gdk-3.0)
-BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
-BuildRequires:  pkgconfig(gio-2.0)
-BuildRequires:  pkgconfig(glib-2.0)
-BuildRequires:  pkgconfig(gspell-1)
-BuildRequires:  pkgconfig(gst-editing-services-1.0)
-BuildRequires:  pkgconfig(gstreamer-1.0)
-BuildRequires:  pkgconfig(gstreamer-player-1.0)
-BuildRequires:  pkgconfig(gstreamer-plugins-base-1.0)
-BuildRequires:  pkgconfig(gtk+-3.0)
-BuildRequires:  pkgconfig(gtksourceview-4)
-BuildRequires:  pkgconfig(libhandy-1)
-BuildRequires:  pkgconfig(libsecret-1)
-BuildRequires:  pkgconfig(openssl)
-BuildRequires:  pkgconfig(pango)
-BuildRequires:  pkgconfig(pangocairo)
+BuildRequires: meson
+BuildRequires: rust-packaging
+BuildRequires: dbus-devel
+BuildRequires: gtk4-devel
+BuildRequires: libadwaita-devel
+BuildRequires: libsecret-devel
+BuildRequires: itstool
 
 Requires:       hicolor-icon-theme
 
