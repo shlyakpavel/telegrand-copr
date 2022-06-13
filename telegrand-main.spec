@@ -1,6 +1,6 @@
-%global commit  6f831c27be57408b22fdb934189945772fe5aa23
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global date    20211018
+#%global commit  6f831c27be57408b22fdb934189945772fe5aa23
+#%global shortcommit %(c=%{commit}; echo ${c:0:7})
+#%global date    20211018
 
 %global appname telegrand
 %global uuid    com.github.melix99.telegrand.Devel
