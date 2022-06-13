@@ -6,7 +6,7 @@
 %global uuid    com.github.melix99.telegrand.Devel
 
 Name:           %{appname}
-Version:        0.0.2
+Version:        0.0.3
 Release:        1
 Summary:        Matrix messaging app for GNOME written in Rust
 
@@ -83,6 +83,9 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/*.desktop
 
 
 %changelog
+* Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 0.0.3-1
+- new package built with tito
+
 * Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 0.0.2-1
 - new package built with tito
 
