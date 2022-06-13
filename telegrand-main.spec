@@ -12,7 +12,7 @@ Summary:        Matrix messaging app for GNOME written in Rust
 
 License:        GPLv3+
 URL:            https://github.com/melix99/telegrand/
-Source0:	%{url}/archive/refs/heads/main.zip
+Source0:	https://github.com/melix99/telegrand/archive/refs/heads/main.zip
 
 BuildRequires:  cargo
 BuildRequires:  cmake
