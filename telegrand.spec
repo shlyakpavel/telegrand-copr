@@ -52,7 +52,7 @@ optimized for collaboration in large groups, such as free software projects.
 
 
 %prep
-%autosetup -n %{appname}-%{shortcommit} -p0
+%autosetup -n %{appname}-%{commit} -p0
 
 %build
 %meson
