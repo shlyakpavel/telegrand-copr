@@ -3,7 +3,7 @@
 %global date    20200613
 
 %global appname telegrand
-%global uuid    com.github.melix99.telegrand.Devel
+#%global uuid    com.github.melix99.telegrand.Devel
 
 Name:           %{appname}
 Version:        0.0.3
@@ -12,7 +12,7 @@ Summary:        Matrix messaging app for GNOME written in Rust
 
 License:        GPLv3+
 URL:            https://github.com/melix99/telegrand/
-Source:		https://github.com/melix99/telegrand/archive/%{commit}/%{appname}-%{shortcommit}.tar.gz
+Source0:		https://github.com/melix99/telegrand/archive/%{commit}/%{appname}-%{shortcommit}.tar.gz
 
 BuildRequires:  cargo
 BuildRequires:  cmake
