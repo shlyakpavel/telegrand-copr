@@ -5,7 +5,7 @@
 %global appname telegrand
 %global uuid    com.github.melix99.telegrand.Devel
 
-Name:           %{appname}-main
+Name:           %{appname}
 Version:        0.0.2
 Release:        1
 Summary:        Matrix messaging app for GNOME written in Rust
