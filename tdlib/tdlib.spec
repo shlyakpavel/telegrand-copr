@@ -1,11 +1,18 @@
+%undefine __cmake_in_source_build
+
+%global commit      461b740987101972cce65d1d5c996f455e4891ee
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+%global commit_date 20220324
+%global gitrel      .%{commit_date}.git%{shortcommit}
+
 Name: tdlib
-Version: 1.8.3
+Version: 1.8.2
 Release: 1%{?dist}
 
 License: Boost
 URL: https://github.com/%{name}/td
 Summary: Cross-platform library for building Telegram clients
-Source0: %{url}/archive/%{version}/%{name}-master.tar.gz
+Source0: %{url}/archive/%{commit}.tar.gz
 
 BuildRequires: gperftools-devel
 BuildRequires: openssl-devel
@@ -43,7 +50,7 @@ Requires: %{name}-devel%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 %{summary}.
 
 %prep
-%autosetup -n td-master -p1
+%autosetup -n td-%{commit} -p1
 sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
 
 %build
