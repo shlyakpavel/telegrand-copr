@@ -6,7 +6,7 @@
 %global gitrel      .%{commit_date}.git%{shortcommit}
 
 Name: tdlib
-Version: 1.8.2
+Version: 1.8.3
 Release: 1%{?dist}
 
 License: Boost
@@ -79,6 +79,9 @@ sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
 %{_libdir}/libtd*.a
 
 %changelog
+* Mon Jun 13 2022 Pavel Shlyak <shlyakpavel@gmail.com> 1.8.3-1
+- new package built with tito
+
 * Tue Feb 15 2022 Onuralp Sezer <thunderbirdtr@fedoraproject.org> - 1.8.0-1
 - Version 1.8.0
 
