@@ -1,11 +1,11 @@
 Name: tdlib
-Version: master
+Version: 1.8.3
 Release: 1%{?dist}
 
 License: Boost
 URL: https://github.com/%{name}/td
 Summary: Cross-platform library for building Telegram clients
-Source0: %{url}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0: %{url}/archive/%{version}/%{name}-master.tar.gz
 
 BuildRequires: gperftools-devel
 BuildRequires: openssl-devel
@@ -43,7 +43,7 @@ Requires: %{name}-devel%{?_isa} = %{?epoch:%{epoch}:}%{version}-%{release}
 %{summary}.
 
 %prep
-%autosetup -n td-%{version} -p1
+%autosetup -n td-master -p1
 sed -e 's/"DEFAULT"/"PROFILE=SYSTEM"/g' -i tdnet/td/net/SslStream.cpp
 
 %build
